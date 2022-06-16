@@ -27,4 +27,5 @@ java -jar target/${NAME}-${VERSION}.jar
 
 echo 'This zips a file'
 sudo yum install zip
-zip -r  my-app-1.0-SNAPSHOT.zip  my-app-1.0-SNAPSHOT.jar
+cd /var/lib/jenkins/workspace/test-maven-project/target
+zip -r  *.jar.zip  my-app-1.0-SNAPSHOT.jar
